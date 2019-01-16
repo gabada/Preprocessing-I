@@ -148,7 +148,7 @@ header {
   display: flex;
   width: 97%;
   justify-content: flex-end;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
 }
 .jumbo-container {
@@ -172,10 +172,10 @@ header {
   border-bottom: 1px solid grey;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
-  margin: 0 1rem 0 2rem;
+  margin: 1rem 1rem 0 2rem;
 }
 .jumbo p {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   margin: 3rem 0 0 2rem;
 }
 .jumbo button {
@@ -188,14 +188,36 @@ header {
 }
 .bottom {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-flow: row wrap;
+  width: 95%;
+  justify-content: space-between;
+  margin-top: 2rem;
 }
-.listen {
-  margin: 2rem 0 0 2rem;
+.bottom .listen {
+  margin-left: 2rem;
+  width: 50%;
+  font-size: 1.5rem;
+}
+.stuff {
+  max-width: 50%;
+}
+.stuff h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.stuff ul {
+  border: 1px #eee solid;
+}
+.stuff .stuff-list {
+  font-size: 1.5rem;
+  border-top: 1px #eee solid;
 }
 .listen h2 {
   font-size: 3rem;
+  margin: 0 0 0.5rem 0;
+}
+.listen p {
+  line-height: 1.25;
 }
 .work-content {
   margin: 0 0 0 2rem;
