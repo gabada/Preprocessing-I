@@ -137,9 +137,13 @@ body {
   font-family: sans-serif, Arial;
 }
 .container {
-  max-width: 800px;
-  margin: 2rem 0 0 2rem;
+  max-width: 1024px;
   margin: 2rem auto;
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 400px;
+  }
 }
 h1 {
   font-size: 3.5rem;
@@ -147,18 +151,23 @@ h1 {
 }
 header {
   display: flex;
-  width: 97%;
+  width: 92%;
   justify-content: flex-end;
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
-nav a {
+@media (max-width: 500px) {
+  header {
+    width: 75%;
+  }
+}
+header a {
   color: black;
   text-decoration: none;
   margin-left: 1.5rem;
 }
 .jumbo-container {
-  width: 100%;
+  width: 95%;
   margin: 0 0 0 2rem;
 }
 .jumbo {
@@ -167,11 +176,21 @@ nav a {
   height: 60rem;
   border-radius: 5px;
 }
+@media (max-width: 500px) {
+  .jumbo {
+    width: 85%;
+  }
+}
 .jumbo .profile {
   width: 50%;
   height: 50%;
   margin: 0 0 0 2rem;
   margin-top: 5rem;
+}
+@media (max-width: 500px) {
+  .jumbo .profile {
+    width: 290px;
+  }
 }
 .jumbo h2 {
   font-size: 2rem;
@@ -192,12 +211,24 @@ nav a {
   font-size: 1.5rem;
   margin: 2rem 0 0 2rem;
 }
+@media (max-width: 500px) {
+  .jumbo button {
+    margin: 0 0 0 2rem;
+  }
+}
 .bottom {
   display: flex;
   flex-flow: row wrap;
   width: 95%;
   justify-content: space-between;
   margin-top: 2rem;
+}
+@media (max-width: 500px) {
+  .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .bottom .listen {
   margin-left: 2rem;
@@ -207,6 +238,11 @@ nav a {
 .stuff {
   max-width: 50%;
   margin-right: 3rem;
+}
+@media (max-width: 500px) {
+  .stuff {
+    margin: 2rem 0 0 2rem;
+  }
 }
 .stuff h3 {
   font-size: 2.5rem;
@@ -230,6 +266,12 @@ nav a {
 .work-content {
   margin: 0 0 0 2rem;
 }
+@media (max-width: 500px) {
+  .work-content {
+    width: 50%;
+    margin-top: 2rem;
+  }
+}
 .work-content h3 {
   font-size: 2.8rem;
 }
@@ -240,7 +282,11 @@ nav a {
 }
 table {
   width: 97%;
-  height: 10rem;
+}
+@media (max-width: 500px) {
+  table {
+    max-width: 50%;
+  }
 }
 table tr:nth-child(even) {
   background-color: #eee;
