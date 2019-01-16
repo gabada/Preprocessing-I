@@ -48,6 +48,26 @@ table {
 	border-spacing: 0;
 }
 
+// Variables
+
+@def-mar-left: 2rem;
+
+// Mixins
+
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.l-margin() {
+	margin-left: @def-mar-left;
+}
+
+.r-margin() {
+	margin-right: @def-mar-left;
+}
+
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
