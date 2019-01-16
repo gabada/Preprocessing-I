@@ -50,7 +50,10 @@ table {
 
 // Variables
 
-@def-mar-left: 2rem;
+@def-left: 2rem;
+@def-font: sans-serif, Arial;
+@jumbo-color: #eee;
+@dark-color: grey;
 
 // Mixins
 
@@ -60,13 +63,10 @@ table {
   align-items: center;
 }
 
-.l-margin() {
-	margin-left: @def-mar-left;
+.d-margin(@top: 0, @right: 0, @bottom: 0, @left: 0) {
+	margin: @top @right @bottom @left;
 }
 
-.r-margin() {
-	margin-right: @def-mar-left;
-}
 
 /* Set every element's box-sizing to border-box */
 * {
@@ -75,42 +75,45 @@ table {
 
 html, body {
     height: 100%;
-    font-size: 62.5%
+    font-size: 62.5%;
+    font-family: @def-font;
 }
 
 .container {
 	max-width: 880px;
+	.d-margin(2rem,0,0,@def-left);
 }
 
 
 h1 {
 	font-size: 3.5rem;
-	margin: 1rem 0;
-	.l-margin;
+	.d-margin(1rem,0,0,@def-left);
 	}
 
 header {
 	display: flex;
-	width: 92.5%;
+	width: 97%;
 	justify-content: flex-end;
 	font-size: 1.6rem;
 	margin-bottom: 2rem;
 }
 
 .jumbo-container {
-	.center;
-	width: 95%;
+
+	width: 100%;
+	.d-margin(0,0,0,@def-left);
 }
 
 .jumbo {
-	background-color: #eee;
+	background-color: @jumbo-color;
 	width: 95%;
 	height: 60rem;
+	border-radius: 5px;
 
 	.profile {
 	width: 50%;
 	height: 50%;
-	.l-margin;
+	.d-margin(0,0,0,@def-left);
 	margin-top: 5rem;
 	}
 }
@@ -118,15 +121,14 @@ header {
 .jumbo {
 	h2 {
 	font-size: 2rem;
-	border-bottom: 1px solid grey;
+	border-bottom: 1px solid @dark-color;
 	padding-bottom: 2rem;
 	margin-bottom: 2rem;
-	.l-margin;
-	.r-margin;
+	.d-margin(0,1rem,0,@def-left);
 	}
 	p {
 	font-size: 1.6rem;
-	.l-margin;
+	.d-margin(3rem,0,0,@def-left);
 	}
 	button {
 	background: gray;
@@ -134,7 +136,33 @@ header {
 	color: white;
 	padding: 1rem;
 	font-size: 1.5rem;
-	margin-top: 2rem;
-	.l-margin;
+	.d-margin(2rem,0,0,@def-left);
+	}
+}
+
+.bottom {
+	.center;
+}
+
+.listen {
+	.d-margin(2rem,0,0,@def-left);
+	h2 {
+	font-size: 3rem;
+	}
+}
+
+.work-content {
+	.d-margin(0,0,0,@def-left);
+}
+
+footer {
+	.center;
+	background: @dark-color;
+	padding: 2rem;
+	color: white;
+	font-size: 1.4rem;
+	.d-margin(2rem,0,0,0);
+	.copyright {
+	margin-bottom: 1rem;
 	}
 }

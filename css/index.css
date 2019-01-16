@@ -134,37 +134,37 @@ html,
 body {
   height: 100%;
   font-size: 62.5%;
+  font-family: sans-serif, Arial;
 }
 .container {
   max-width: 880px;
+  margin: 2rem 0 0 2rem;
 }
 h1 {
   font-size: 3.5rem;
-  margin: 1rem 0;
-  margin-left: 2rem;
+  margin: 1rem 0 0 2rem;
 }
 header {
   display: flex;
-  width: 92.5%;
+  width: 97%;
   justify-content: flex-end;
   font-size: 1.6rem;
   margin-bottom: 2rem;
 }
 .jumbo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 95%;
+  width: 100%;
+  margin: 0 0 0 2rem;
 }
 .jumbo {
   background-color: #eee;
   width: 95%;
   height: 60rem;
+  border-radius: 5px;
 }
 .jumbo .profile {
   width: 50%;
   height: 50%;
-  margin-left: 2rem;
+  margin: 0 0 0 2rem;
   margin-top: 5rem;
 }
 .jumbo h2 {
@@ -172,12 +172,11 @@ header {
   border-bottom: 1px solid grey;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin: 0 1rem 0 2rem;
 }
 .jumbo p {
   font-size: 1.6rem;
-  margin-left: 2rem;
+  margin: 3rem 0 0 2rem;
 }
 .jumbo button {
   background: gray;
@@ -185,6 +184,32 @@ header {
   color: white;
   padding: 1rem;
   font-size: 1.5rem;
-  margin-top: 2rem;
-  margin-left: 2rem;
+  margin: 2rem 0 0 2rem;
+}
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listen {
+  margin: 2rem 0 0 2rem;
+}
+.listen h2 {
+  font-size: 3rem;
+}
+.work-content {
+  margin: 0 0 0 2rem;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: grey;
+  padding: 2rem;
+  color: white;
+  font-size: 1.4rem;
+  margin: 2rem 0 0 0;
+}
+footer .copyright {
+  margin-bottom: 1rem;
 }
