@@ -52,6 +52,7 @@ table {
 
 @def-left: 2rem;
 @def-font: sans-serif, Arial;
+@def-font-size: 1.5rem;
 @jumbo-color: #eee;
 @dark-color: grey;
 
@@ -94,7 +95,7 @@ header {
 	display: flex;
 	width: 97%;
 	justify-content: flex-end;
-	font-size: 1.6rem;
+	font-size: @def-font-size;;
 	margin-bottom: 2rem;
 }
 
@@ -124,10 +125,10 @@ header {
 	border-bottom: 1px solid @dark-color;
 	padding-bottom: 2rem;
 	margin-bottom: 2rem;
-	.d-margin(0,1rem,0,@def-left);
+	.d-margin(1rem,1rem,0,@def-left);
 	}
 	p {
-	font-size: 1.6rem;
+	font-size: @def-font-size;
 	.d-margin(3rem,0,0,@def-left);
 	}
 	button {
@@ -135,19 +136,47 @@ header {
 	border-radius: 5px;
 	color: white;
 	padding: 1rem;
-	font-size: 1.5rem;
+	font-size: @def-font-size;
 	.d-margin(2rem,0,0,@def-left);
 	}
 }
 
 .bottom {
-	.center;
+	display: flex;
+	flex-flow: row wrap;
+	width: 95%;
+	justify-content: space-between;
+	margin-top: 2rem;
+	.listen {
+		margin-left: @def-left;
+		width: 50%;
+		font-size: @def-font-size;
+	}
+}
+.stuff {
+	max-width: 50%;
+	margin-right: 3rem;
+	h3 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+	ul {
+		border: 1px @jumbo-color solid;
+	}
+	.stuff-list {
+		font-size: @def-font-size;
+		border-top: 1px @jumbo-color solid;
+		padding: .5rem;
+	}
 }
 
 .listen {
-	.d-margin(2rem,0,0,@def-left);
 	h2 {
 	font-size: 3rem;
+	.d-margin(0,0,.5rem,0);
+	}
+	p {
+		line-height: 1.25;
 	}
 }
 

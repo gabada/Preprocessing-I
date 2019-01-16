@@ -200,6 +200,7 @@ header {
 }
 .stuff {
   max-width: 50%;
+  margin-right: 3rem;
 }
 .stuff h3 {
   font-size: 2.5rem;
@@ -211,6 +212,7 @@ header {
 .stuff .stuff-list {
   font-size: 1.5rem;
   border-top: 1px #eee solid;
+  padding: 0.5rem;
 }
 .listen h2 {
   font-size: 3rem;
