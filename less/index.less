@@ -53,7 +53,7 @@ table {
 @def-left: 2rem;
 @def-font: sans-serif, Arial;
 @def-font-size: 1.5rem;
-@jumbo-color: #eee;
+@light-color: #eee;
 @dark-color: grey;
 
 // Mixins
@@ -106,7 +106,7 @@ header {
 }
 
 .jumbo {
-	background-color: @jumbo-color;
+	background-color: @light-color;
 	width: 95%;
 	height: 60rem;
 	border-radius: 5px;
@@ -161,11 +161,11 @@ header {
 		margin-bottom: 1rem;
 	}
 	ul {
-		border: 1px @jumbo-color solid;
+		border: 1px @light-color solid;
 	}
 	.stuff-list {
 		font-size: @def-font-size;
-		border-top: 1px @jumbo-color solid;
+		border-top: 1px @light-color solid;
 		padding: .5rem;
 	}
 }
@@ -182,6 +182,37 @@ header {
 
 .work-content {
 	.d-margin(0,0,0,@def-left);
+	h3 {
+		font-size: 2.8rem;
+	}
+	.history {
+		font-size: @def-font-size;
+		border-top: 1px @light-color solid;
+		border-bottom: 1px @light-color solid;
+	}
+}
+
+table {
+	width: 97%;
+	height: 10rem;
+
+		tr:nth-child(even) {
+		 background-color: @light-color
+	}
+	th {
+		font-weight: 700;
+		text-align: center;
+		padding: 1rem;
+	}
+	.years {
+		font-weight: 700;
+		text-align: center;
+	}
+}
+
+td {
+	text-align: center;
+	padding: 1rem;
 }
 
 footer {
@@ -190,8 +221,5 @@ footer {
 	padding: 2rem;
 	color: white;
 	font-size: 1.4rem;
-	.d-margin(2rem,0,0,0);
-	.copyright {
-	margin-bottom: 1rem;
-	}
+	.d-margin(2.5rem,2rem,0,@def-left);
 }

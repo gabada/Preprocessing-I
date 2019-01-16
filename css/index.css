@@ -224,6 +224,34 @@ header {
 .work-content {
   margin: 0 0 0 2rem;
 }
+.work-content h3 {
+  font-size: 2.8rem;
+}
+.work-content .history {
+  font-size: 1.5rem;
+  border-top: 1px #eee solid;
+  border-bottom: 1px #eee solid;
+}
+table {
+  width: 97%;
+  height: 10rem;
+}
+table tr:nth-child(even) {
+  background-color: #eee;
+}
+table th {
+  font-weight: 700;
+  text-align: center;
+  padding: 1rem;
+}
+table .years {
+  font-weight: 700;
+  text-align: center;
+}
+td {
+  text-align: center;
+  padding: 1rem;
+}
 footer {
   display: flex;
   justify-content: center;
@@ -232,8 +260,5 @@ footer {
   padding: 2rem;
   color: white;
   font-size: 1.4rem;
-  margin: 2rem 0 0 0;
-}
-footer .copyright {
-  margin-bottom: 1rem;
+  margin: 2.5rem 2rem 0 2rem;
 }
